@@ -1,0 +1,132 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<!-- Meta Data -->
+		<meta charset="UTF-8">
+		<meta name = "author" content = "Nathan Rekstad">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<title>Reading | Nathan Rekstad</title>
+		
+		<!-- Google fonts -->
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@600&display=swap" rel="stylesheet"> 		
+		<link href="https://fonts.googleapis.com/css2?family=Play&display=swap" rel="stylesheet"> 		
+		
+		<!-- External Stylesheet -->
+		<link rel = "stylesheet" type = "text/css" href = "styling.css">		
+	</head>
+	
+	<body>
+		<header><h1>Nathan Rekstad<br>The Webpage</h1></header>
+		
+		<ul class = "navbar">		
+			<!-- Uses relative file paths to each page -->
+			<li><a href="Homepage.html">Home</a></li>
+			<li><a class="active" href="Reading.html">Reading</a></li>
+		</ul>
+					
+		<h2 class= "centered full-underline">Reading</h2>
+				
+		<p class = "give-margin">One of my favorite things to do is read. Below is a list of some of the books I've read recently, along with a short comment. I've only recently started recording books; thus the short list.</p>
+		
+		<table id="books">
+			<!--caption><h2>Books I've Read</h2></caption-->
+			<thead>
+				<th>Title</th>
+				<th>Author</th>
+				<th>Finish Date</th>
+				<th>Comments</th>
+			</thead>
+			<!-- I fill the table in the script tag. -->
+		</table>
+		
+		<footer class = "column full">
+			<div class="footer_section">
+				<h3>Resources</h3>
+				<nav>
+					<a href="w3schools.com">w3schools</a> <br>
+					<a href="https://www.learnhowtoprogram.com/introduction-to-programming/getting-started-at-epicodus/learn-how-to-program">Epicodus</a> <br>
+					<a href="https://www.khanacademy.org/computer-programing">Khan Academy</a><br>
+					<a href="https://notepad-plus-plus.org">Notepad++</a>
+				</nav>
+			</div>
+			
+			<div class="footer_section">
+				<h3>Accounts</h3>
+				<nav>
+					<a href="https://lichess.org/@/KingsKnight16">Lichess.org</a> <br>
+					<a href="https://www.khanacademy.org/profile/Nar07/">Khan Academy</a>
+				</nav>
+			</div>
+		</footer>
+		
+		<!-- Array of books -->
+		<script>
+			// Array of books 
+			var books = [
+				{
+					title: "Bookity Bookity Book",
+					author: "Authorius Anonimus",
+					finishDate: "mm-dd-yr",
+					comment: "Very forgettable",
+				},
+				{
+					title: "Bookity Bookity Book",
+					author: "Authorius Anonimus",
+					finishDate: "mm-dd-yr",
+					comment: "Very forgettable",
+				},
+				{
+					title: "Bookity Bookity Book",
+					author: "Authorius Anonimus",
+					finishDate: "mm-dd-yr",
+					comment: "Very forgettable",
+				},
+				{
+					title: "Bookity Bookity Book",
+					author: "Authorius Anonimus",
+					finishDate: "mm-dd-yr",
+					comment: "Very forgettable",
+				},				
+			];
+		</script>
+		
+		<!-- Fill up the table with books -->
+		<script>
+            // Fill the table
+            function fillTable (){
+                let bookTable = document.getElementById("books");
+                for (var i = 0; i < books.length; i++){
+                    let book = books[i];
+                    
+                    // Create a new row
+                    let row = document.createElement("tr");
+                    
+                    // Create slots for the row
+                    let title = document.createElement("td"),
+                        author = document.createElement("td"),
+                        review = document.createElement("td"),
+						date = document.createElement("td");
+                    // Set the contents of the slots to the relevent info.    
+                    title.textContent = book.title;
+                    author.textContent = book.author;
+					date.textContent = book.finishDate;
+                    review.textContent = book.comment;
+                    
+                    // Add the slots to the row
+                    row.append(title);
+                    row.append(author);
+					row.append(date);
+                    row.append(review);
+                    
+                    // Add the row to the table.
+                    bookTable.append(row);
+                }
+            }
+            
+            fillTable();
+		</script>
+	</body>
+</html>
