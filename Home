@@ -1,0 +1,80 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<!-- Meta Data -->
+		<meta charset="UTF-8">
+		<meta name = "author" content = "Alan Enar">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<title>Home | Alan Enar</title>
+		
+		<!-- Google fonts -->
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@600&display=swap" rel="stylesheet"> 		
+		<link href="https://fonts.googleapis.com/css2?family=Play&display=swap" rel="stylesheet"> 		
+
+		<!-- External Stylesheet -->
+		<link rel = "stylesheet" type = "text/css" href = "styling.css">		
+	</head>
+	
+	<body>
+		<header><h1>Alan Enar<br>The Webpage</h1></header>
+		
+		<ul class = "navbar">		
+			<!-- Uses relative file paths to each page -->
+			<li><a class="active" href="Homepage.html">Home</a></li>
+			<li><a href="Reading.html">Reading</a></li>
+		</ul>
+
+		<!-- Test article -->
+		<article class = "column middle">
+			<h2 class = "centered full-underline">First Article</h2>
+			<p>Testing, testing, 1, 2, 3.</p>
+			<p>I'm making this website to expand my skill with, and knowledge of HTML, CSS, and Javascript. I've learned the basics in these languages from Khan Academy's courses in Computer Programming.</p>
+		</article>
+		
+		<!-- Picture of "me" -->
+		<div class = "column side">
+			<h2 class = "centered full-underline">The Site Designer</h2>
+			<img src="Imgs\Gnome_Closeup.jpg" alt="Picture of a whittled wooden gnome" style=""> 
+			<p>... in case you wondered what I look like.</p>
+		</div>
+		
+		<!-- Article on the value of fantasy -->
+		<article class = "column middle">
+			<h2 class = "centered full-underline">The Value of Fantasy</h2>
+			<p>Many people look down on the literary genre of fantasy as a whole. It is irrelevant and escapist. As such, it wastes time. However, good fantasy exists, and it is none of these things, but rather something which has caused me and many others to grow in our appreciation of the world, and given an inspiration to act as good people within it. </p>
+			<p>Fantasy in literature takes us away from the familiar day to day world, and drops us in entirely new places. It may be a world like ours, but with magical beings, and fantastic societies. Or, it could take us into a version of our world only differing in its location in time and space. But however it is situated, well-written fantasy awakens us to the wonder within this world. After reading about the body of Boromir being carried over Rauros Falls in a skiff, surrounded by the weapons of his foes, we may pay more attention to the beauty of a physical waterfall, as we imagine a boat rushing underneath the observation bridge, over the rocky edge, and into the foaming pool below. A skillfully written tale about talking animals or trees causes us to appreciate afresh the complexity and beauty of the flora and fauna around us.</p> 
+			<p>In addition, fantasy can cause us to be better people in the real world. As we read of valiant heroes or brave explorers or admirable leaders, we become inspired to imitate them. By the same token, evil, corrupted, or apathetic characters can cause us to see our own flaws. No one wants to be like Eustace, always flaunting their own knowledge, or like Benjamin the donkey in Animal Farm, capable of raising resistance to an evil, but choosing not to.</p>
+			<p>Fantasy is an indispensible genre of literature. It moves us to live as protagonists in our own stories. It renews our delight in the world around us. As G.K. Chesterton states in chapter IV of Orthodoxy regarding fairy tales, “These tales say that apples were golden only to refresh the forgotten moment when we found they were green.“</p>
+
+		</article>
+		
+		<!-- Sidebar info about myself -->
+		<div class = "column side">
+			<h2 class= "centered full-underline">A Bit About Me</h2>
+			<p>I live in the state of Minnesota, in the USA. My hobbies include reading, wood-carving, and coding. I also like bicycling, and have run a 5 minute, 54 second mile.</p>
+		</div>
+		
+		<footer class = "column full">
+			<div class="footer_section">
+				<h3>Resources</h3>
+				<nav>
+					<a href="https://www.w3schools.com/">w3schools</a> <br>
+					<a href="https://www.learnhowtoprogram.com/introduction-to-programming/getting-started-at-epicodus/learn-how-to-program">Epicodus</a> <br>
+					<a href="https://www.khanacademy.org/computer-programing">Khan Academy</a><br>
+					<a href="https://notepad-plus-plus.org">Notepad++</a>
+				</nav>
+			</div>
+			
+			<div class="footer_section">
+				<h3>Accounts</h3>
+				<nav>
+					<a href="https://lichess.org/@/KingsKnight16">Lichess.org</a> <br>
+					<a href="https://www.khanacademy.org/profile/Nar07/">Khan Academy</a>
+				</nav>
+			</div>
+		</footer>
+	</body>	
+</html>
+
