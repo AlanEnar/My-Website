@@ -1,0 +1,180 @@
+/* General styling */
+*{
+	margin: 0px;/*Eliminates annoying gaps between header, navbar, etc.*/
+	box-sizing: border-box;
+}
+
+body {
+	position: absolute;
+	background: White;
+	font-family: "Cairo", sans-serif;
+	width: 100%;
+}	
+
+article {
+	background: white;
+	color: black;
+	padding: 1% 5% 1% 5%;
+	border: #090935 4px solid;	
+	margin:1%;
+}
+
+p {
+	text-indent: 3%;
+	position: relative;
+}
+
+header {
+	background: #090935;
+	padding-top:3%;
+	padding-bottom:3%;
+	font-family: "Play", sans-serif;
+	color:#125BE2;
+	text-align: center;
+	font-size: 127%;
+}
+
+footer {
+	background: #090935;
+	font-family: "Play", sans-serif;
+}
+
+footer h3 {
+	margin-bottom: 0;
+	text-decoration: underline;
+	color: #125BE2;
+}
+
+nav a {
+	color: #125BE2;
+}
+
+.centered {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+.full-underline {
+	border-bottom: #090935 5px solid;
+	margin-bottom: 3.5%;
+}
+
+.give-margin {
+	margin: 2%;
+}
+
+.active {
+	background: #172a63;
+}
+
+/* Column styling, thanks to w3schools.com */
+ /* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+}
+
+.column.full {
+	width: 100%;
+}
+
+/* Center column */
+.column.middle {
+	width: 68%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (600px wide or less) */
+@media screen and (max-width: 300px) {
+  .column.side, .column.middle {
+    width: 100%;
+  }
+} 
+
+/* Styling for the side info columns */
+/* Side columns */
+.column.side {
+	background: rgb(255, 255, 255);
+	position: relative;
+	float: right;
+	color: #090935;
+	border: 1px #090935 solid;
+	width: 28%;
+	padding: 1.5%;
+	margin:1%;
+}
+
+.column.side img {
+	object-fit: cover;
+	width: 100%
+}
+
+/* Styling for the nav bar at the top */
+ul.navbar {
+  list-style-type: none;
+  overflow: hidden;
+  background: #090935;
+  padding: 0px;
+}
+
+.navbar li {
+  float: left;
+}
+
+.navbar li:hover {
+	background-color: #2424A3;
+}
+
+.navbar li a {
+  display: block;
+  text-decoration: none;
+  padding: 7px;
+  font-size:144%;
+  color: #125BE2;
+}					
+
+.footer_section {
+	float: left;
+	margin: 2%;
+	margin-right:3%;
+}
+
+/*
+	#2424A3 darker blue
+	#125BE2 light blue`
+	#172a63 active link blue
+	#090935 very dark blue
+	CSS colors https://www.w3schools.com/colors/colors_names.asp
+*/
+
+/* Styling for the book table */
+table#books {
+	background: white;
+	padding: 1%;
+	width: 100%;
+	font-family: "Cairo", sans-serif;
+}
+
+table#books caption {
+	background:white;
+	padding:1%;
+	font-family: "Play", sans-serif;
+	text-align: center;
+}
+
+#books th {
+	border-bottom: #090935 3px solid;
+}
+
+#books td {
+	border-right: #090935 1.5px solid;
+	border-bottom: #090935 1.5px solid;
+	padding: 1%;
+}
+
